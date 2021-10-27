@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
@@ -28,17 +28,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/to"
-            android:textSize="34sp" />
+            android:textSize="24sp" />
 
         <EditText
-            android:autofillHints="test@domain.local"
             android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="match_parent"
+            android:layout_width="384dp"
             android:layout_height="wrap_content"
+            android:autofillHints="test@domain.local"
             android:ems="10"
             android:hint="@string/address"
             android:inputType="textEmailAddress"
-            android:textSize="34sp" />
+            android:textSize="24sp" />
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -46,20 +46,20 @@
         android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout2">
 
         <EditText
-            android:autofillHints="Sample"
             android:id="@+id/editTextTextMultiLine"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:autofillHints="Sample"
             android:ems="10"
             android:gravity="start|top"
             android:hint="@string/message"
             android:inputType="textMultiLine"
-            android:textSize="34sp" />
+            android:textSize="24sp" />
 
     </androidx.gridlayout.widget.GridLayout>
 
